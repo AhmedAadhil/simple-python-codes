@@ -1,0 +1,10 @@
+s=input()
+s=s.lower()
+ln=len(s)
+st=""
+for i in range(0,ln):
+    st=st+s[ln-i-1]
+if(s==st):
+    print(True)
+else:
+    print(False)
