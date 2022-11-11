@@ -1,0 +1,5 @@
+s=input()
+st=""
+for c in s:
+    st=st+c
+    print(st)
