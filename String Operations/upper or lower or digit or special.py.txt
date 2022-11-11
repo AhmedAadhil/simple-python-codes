@@ -1,0 +1,9 @@
+s=input()
+if(s.isdigit()):
+    print("Digit")
+elif(s.isupper()):
+    print("Uppercase Letter")
+elif(s.islower()):
+    print("Lowercase Letter")
+else:
+    print("Special Character")
