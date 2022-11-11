@@ -1,0 +1,8 @@
+r=int(input())
+c=int(input())
+s="* "*c
+for i in range(1,r+1):
+    if(i==r or i==1):
+        print(s)
+    else:
+        print("* "+" "*(2*(c-2))+"* ")
