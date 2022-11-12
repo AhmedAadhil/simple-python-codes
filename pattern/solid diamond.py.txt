@@ -1,0 +1,15 @@
+inpt=int(input())
+r=(inpt*2)-1
+s="*"
+line=""
+k=inpt-1
+for i in range(1,r+1):
+    if(i<=inpt):
+        spc=" "*(inpt-i)
+        line=spc+("* "*i)
+        print(line)
+    elif(i>inpt):
+        spc=" "*(i-inpt)
+        line=spc+"* "*(k) 
+        print(line)
+        k=k-1;
