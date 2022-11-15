@@ -1,0 +1,13 @@
+n=int(input())
+m=n
+pattern=""
+for i in range(1,n+1):
+    o=m
+    m=m-1
+    pattern=""
+    seqnum=1
+    while(o>0):
+        pattern=pattern+str(seqnum)+" "
+        o=o-1
+        seqnum=seqnum+1
+    print(pattern)
