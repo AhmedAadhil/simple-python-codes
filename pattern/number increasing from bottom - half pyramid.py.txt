@@ -1,0 +1,19 @@
+n=int(input())
+row =int(input())
+st=""
+count=0
+temp_row=row
+for i in range(1,row+1):
+    count=count+temp_row
+    temp_row=temp_row-1
+count=count+n-1   #as pattern starts from the "n" number itself  we subract 1 from the start count
+for i in range(1,row+1):
+    st=""
+    for j in range(i):
+        if(j!=0):
+            st=st+" "+str(count)
+        else:
+            st=st+str(count)
+        count=count-1 
+    print(st)   
+        
