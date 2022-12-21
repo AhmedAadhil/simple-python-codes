@@ -1,0 +1,15 @@
+firstnumber=int(input())
+secondnumber=int(input())
+small=0
+Lcm_found=False
+lcm=0
+if(firstnumber<secondnumber):
+    small=firstnumber
+else:
+    small=secondnumber
+for i in range(small,((secondnumber*firstnumber)+1)):
+    if not Lcm_found:
+        if(i%firstnumber==0 and i%secondnumber==0):
+            lcm=i
+            Lcm_found=True
+print(lcm)
