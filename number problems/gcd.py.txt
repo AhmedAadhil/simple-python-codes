@@ -1,0 +1,12 @@
+firstnumber=int(input())
+secondnumber=int(input())
+small=0
+commonfactor=1
+if(firstnumber<secondnumber):
+    small=firstnumber
+else:
+    small=secondnumber
+for i in range(2,small+1):
+    if(firstnumber%i==0 and secondnumber%i==0):
+        commonfactor=i
+print(commonfactor)
